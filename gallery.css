@@ -73,22 +73,20 @@ body {
 }
 
 #play-btn {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin: 20px auto 50px auto; /* under title */
 
   background: magenta;
   color: black;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
 
-  padding: 20px 40px;
+  padding: 14px 32px;
   border: none;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
 
-  box-shadow: 0 0 25px rgba(255, 0, 255, 0.7);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
 }
 
 #play-btn:hover {
