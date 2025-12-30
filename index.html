@@ -7,6 +7,33 @@
 </head>
 <body>
 
+<!-- Music Player -->
+<div id="music-container">
+  <button id="yt-play-btn">▶ Play Music</button>
+  <iframe id="yt-player" width="0" height="0"
+    src="https://www.youtube.com/embed/-ucjrM28ffc?enablejsapi=1"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+  
+<script>
+  const playBtn = document.getElementById("yt-play-btn");
+  const player = document.getElementById("yt-player");
+
+  playBtn.addEventListener("click", () => {
+    player.src += "&autoplay=1"; // start playback
+    playBtn.textContent = "⏸ Pause Music";
+  });
+</script>
+
+
+
+
+  
   <h1 class="title">shuttersub</h1>
 
   <div class="gallery">
