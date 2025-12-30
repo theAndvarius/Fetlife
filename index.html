@@ -7,11 +7,17 @@
 </head>
 <body>
 
+  
 <!-- Music Player -->
-<div id="music-container">
-  <button id="yt-play-btn">▶ Play Music</button>
-  <iframe id="yt-player" width="0" height="0"
-    src="https://www.youtube.com/embed/-ucjrM28ffc?enablejsapi=1"
+<div id="music-player">
+  <button id="play-music-btn">▶ Play Music</button>
+
+  <iframe
+    id="yt-music"
+    width="0"
+    height="0"
+    src="https://www.youtube.com/embed/-ucjrM28ffc?enablejsapi=1&rel=0"
+    title="YouTube music player"
     frameborder="0"
     allow="autoplay; encrypted-media"
     allowfullscreen>
@@ -20,15 +26,22 @@
 
 
   
-<script>
-  const playBtn = document.getElementById("yt-play-btn");
-  const player = document.getElementById("yt-player");
+<button id="play">▶ Play Music</button>
 
-  playBtn.addEventListener("click", () => {
-    player.src += "&autoplay=1"; // start playback
-    playBtn.textContent = "⏸ Pause Music";
-  });
+<iframe
+  id="yt"
+  width="0"
+  height="0"
+  src="https://www.youtube.com/embed/-ucjrM28ffc"
+  allow="autoplay">
+</iframe>
+
+<script>
+  document.getElementById("play").onclick = () => {
+    document.getElementById("yt").src += "?autoplay=1";
+  };
 </script>
+
 
 
 
