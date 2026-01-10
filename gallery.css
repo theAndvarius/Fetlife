@@ -74,7 +74,7 @@ ul, li {
   font-weight: bold;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.12);
   pointer-events: none;
 }
 
